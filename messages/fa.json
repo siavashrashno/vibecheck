@@ -1,5 +1,323 @@
 {
   "HomePage": {
     "title": "به وایب‌چک خوش اومدی!"
+  },
+  "Questions": {
+    "q1": {
+      "id": 1,
+      "category": "Daily Rituals",
+      "question": "صبح شنبه چطوری بیدار می‌شی؟",
+      "options": [
+        { "id": "a", "text": "با صدای آلارم و استرس", "vibe": "Hustler" },
+        {
+          "id": "b",
+          "text": "با نور آفتاب و مدیتیشن",
+          "vibe": "Clean Girl/Boy"
+        },
+        {
+          "id": "c",
+          "text": "ساعت ۲ بعدازظهر با صدای نوتیفیکیشن گوشی",
+          "vibe": "Night Owl"
+        },
+        {
+          "id": "d",
+          "text": "بیدار نمی‌شم، کلاً زندگی در خواب خوش‌تر است",
+          "vibe": "Dreamer"
+        }
+      ]
+    },
+    "q2": {
+      "id": 2,
+      "category": "Daily Rituals",
+      "question": "توی کافه چی سفارش می‌دی؟",
+      "options": [
+        { "id": "a", "text": "آیس لاته با شیر جو", "vibe": "Trendy" },
+        { "id": "b", "text": "اسپرسو دبل تلخ", "vibe": "Serious" },
+        { "id": "c", "text": "هات‌چاکلت با مارشمالو", "vibe": "Soft" },
+        {
+          "id": "d",
+          "text": "هر چی که عکسش قشنگ‌تر بیفته",
+          "vibe": "Influencer"
+        }
+      ]
+    },
+    "q3": {
+      "id": 3,
+      "category": "Daily Rituals",
+      "question": "پلی‌لیستِ مورد علاقه‌ات چیه؟",
+      "options": [
+        { "id": "a", "text": "موزیک‌های Lo-Fi و بارونی", "vibe": "Introvert" },
+        { "id": "b", "text": "بیت‌های تند و بیس‌دار", "vibe": "Extrovert" },
+        {
+          "id": "c",
+          "text": "آهنگ‌های قدیمی که هیچ‌کس نشنیده",
+          "vibe": "Indie/Old Soul"
+        },
+        { "id": "d", "text": "آهنگ‌های ترند تیک‌تاک", "vibe": "Mainstream" }
+      ]
+    },
+    "q4": {
+      "id": 4,
+      "category": "Daily Rituals",
+      "question": "جمعه شب ایده‌آلت چیه؟",
+      "options": [
+        { "id": "a", "text": "پارتی و شلوغی", "vibe": "Social Butterfly" },
+        { "id": "b", "text": "هودی گشاد، پیتزا و نتفلیکس", "vibe": "Cozy" },
+        { "id": "c", "text": "پیاده‌روی تو خیابونای خلوت", "vibe": "Thinker" },
+        {
+          "id": "d",
+          "text": "تموم کردنِ کاری که عقب افتاده",
+          "vibe": "Overachiever"
+        }
+      ]
+    },
+    "q5": {
+      "id": 5,
+      "category": "Daily Rituals",
+      "question": "اسکرین‌تایم گوشیت بیشتر روی کدومه؟",
+      "options": [
+        { "id": "a", "text": "Pinterest و پیدا کردن ایده", "vibe": "Creative" },
+        {
+          "id": "b",
+          "text": "Twitter و دعواهای سیاسی/اجتماعی",
+          "vibe": "Edgy"
+        },
+        { "id": "c", "text": "Instagram و چک کردن بقیه", "vibe": "Social" },
+        { "id": "d", "text": "YouTube و ویدیوهای مستند/آموزشی", "vibe": "Nerd" }
+      ]
+    },
+    "q6": {
+      "id": 6,
+      "category": "The Look",
+      "question": "کمد لباسات چه رنگیه؟",
+      "options": [
+        { "id": "a", "text": "فقط مشکی و خاکستری", "vibe": "Minimal/Dark" },
+        { "id": "b", "text": "رنگ‌های پاستلی و روشن", "vibe": "Soft/Cute" },
+        { "id": "c", "text": "رنگ‌های خاکی و نود", "vibe": "Earth Tone/Clean" },
+        { "id": "d", "text": "هفت‌رنگ و عجیب‌غریب", "vibe": "Eclectic" }
+      ]
+    },
+    "q7": {
+      "id": 7,
+      "category": "The Look",
+      "question": "کدوم اکسسوری رو هرگز از خودت جدا نمی‌کنی؟",
+      "options": [
+        { "id": "a", "text": "هدفونِ بزرگ روی گوش", "vibe": "Mysterious" },
+        { "id": "b", "text": "انگشترهای نقره‌ی زیاد", "vibe": "Vintage" },
+        { "id": "c", "text": "ساعت هوشمند", "vibe": "Practical" },
+        {
+          "id": "d",
+          "text": "عینک آفتابی حتی توی شب",
+          "vibe": "Main Character"
+        }
+      ]
+    },
+    "q8": {
+      "id": 8,
+      "category": "The Look",
+      "question": "کفش مورد علاقه‌ات برای پیاده‌روی؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "کتونی‌های لژدار و درشت",
+          "vibe": "Chunky Sneakers"
+        },
+        { "id": "b", "text": "کفش‌های کلاسیک چرمی", "vibe": "Old Money" },
+        { "id": "c", "text": "دمپایی یا صندل راحت", "vibe": "Carefree" },
+        { "id": "d", "text": "کفش‌های نوک‌تیز و رسمی", "vibe": "Sharp" }
+      ]
+    },
+    "q9": {
+      "id": 9,
+      "category": "The Look",
+      "question": "مدل موی ترجیحیت؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "نامرتب و همین الان از خواب بیدار شدم",
+          "vibe": "Messy Look"
+        },
+        { "id": "b", "text": "خیلی مرتب و واکس خورده", "vibe": "Slick Back" },
+        { "id": "c", "text": "رنگی یا مدل‌های نامتعارف", "vibe": "Rebel" },
+        { "id": "d", "text": "همیشه زیر کلاه", "vibe": "Shy" }
+      ]
+    },
+    "q10": {
+      "id": 10,
+      "category": "The Look",
+      "question": "خرید کردن کجایی؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "تاناکورا و وینتیج‌شاپ‌ها",
+          "vibe": "Sustainable"
+        },
+        { "id": "b", "text": "برندهای معروف پاساژها", "vibe": "Luxury" },
+        { "id": "c", "text": "آنلاین و با تخفیف", "vibe": "Smart Buyer" },
+        {
+          "id": "d",
+          "text": "هر چی که توی پینترست دیدم و دادم بدوزن",
+          "vibe": "Aesthetic"
+        }
+      ]
+    },
+    "q11": {
+      "id": 11,
+      "category": "Relationships",
+      "question": "توی رابطه دنبال چی می‌گردی؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "یکی که با هم سکوت کنیم",
+          "vibe": "Deep Connection"
+        },
+        {
+          "id": "b",
+          "text": "یکی که با هم بریم ماجراجویی",
+          "vibe": "Partner in Crime"
+        },
+        { "id": "c", "text": "یکی که ازم حمایت کنه", "vibe": "Safe Haven" },
+        {
+          "id": "d",
+          "text": "ترجیح می‌دم فعلاً سینگل و آزاد باشم",
+          "vibe": "Independent"
+        }
+      ]
+    },
+    "q12": {
+      "id": 12,
+      "category": "Relationships",
+      "question": "اولین دیت (قرار) کجا بریم؟",
+      "options": [
+        { "id": "a", "text": "یه کافه دنج و قدیمی", "vibe": "Romantic" },
+        { "id": "b", "text": "شهربازی یا گیم‌نت", "vibe": "Playful" },
+        { "id": "c", "text": "گالری هنری یا سینما", "vibe": "Intellectual" },
+        { "id": "d", "text": "کنسرت یا ایونت شلوغ", "vibe": "High Energy" }
+      ]
+    },
+    "q13": {
+      "id": 13,
+      "category": "Relationships",
+      "question": "رد‌ فلگ (Red Flag) بزرگت چیه؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "کسی که به گارسون بی‌احترامی می‌کنه",
+          "vibe": "Kindness"
+        },
+        {
+          "id": "b",
+          "text": "کسی که گوشی‌ش رو ازت قایم می‌کنه",
+          "vibe": "Trust"
+        },
+        {
+          "id": "c",
+          "text": "کسی که سلیقه موسیقی‌ش افتضاحه",
+          "vibe": "Vibe Match"
+        },
+        {
+          "id": "d",
+          "text": "کسی که خیلی حرف می‌زنه و گوش نمی‌ده",
+          "vibe": "Communication"
+        }
+      ]
+    },
+    "q14": {
+      "id": 14,
+      "category": "Relationships",
+      "question": "چطوری به کسی که دوسش داری ابراز علاقه می‌کنی؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "براش پلی‌لیست می‌سازم",
+          "vibe": "Words of Affirmation"
+        },
+        {
+          "id": "b",
+          "text": "هدیه‌های کوچیک و بی‌هوا می‌خرم",
+          "vibe": "Giving"
+        },
+        { "id": "c", "text": "فقط کنارش هستم", "vibe": "Quality Time" },
+        {
+          "id": "d",
+          "text": "بهش کمک می‌کنم کاراشو انجام بده",
+          "vibe": "Acts of Service"
+        }
+      ]
+    },
+    "q15": {
+      "id": 15,
+      "category": "Relationships",
+      "question": "دوستات تو رو به چی می‌شناسن؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "اونی که همیشه مشاوره میده",
+          "vibe": "The Therapist"
+        },
+        { "id": "b", "text": "اونی که همیشه جوک میگه", "vibe": "The Clown" },
+        { "id": "c", "text": "اونی که همیشه دیر میاد", "vibe": "The Late One" },
+        { "id": "d", "text": "اونی که همیشه خوش‌تیپه", "vibe": "The Icon" }
+      ]
+    },
+    "q16": {
+      "id": 16,
+      "category": "The Soul",
+      "question": "اگر یه حیوان بودی، کدوم بودی؟",
+      "options": [
+        { "id": "a", "text": "گربه‌ی مغرور و مستقل", "vibe": "Independent" },
+        { "id": "b", "text": "سگِ وفادار و مهربون", "vibe": "Loyal" },
+        { "id": "c", "text": "عقابِ تنها و بلندپرواز", "vibe": "Visionary" },
+        { "id": "d", "text": "جغدِ دانا و شب‌زنده‌دار", "vibe": "Wise" }
+      ]
+    },
+    "q17": {
+      "id": 17,
+      "category": "The Soul",
+      "question": "کدوم فصل رو بیشتر دوست داری؟",
+      "options": [
+        { "id": "a", "text": "پاییز و خش‌خش برگ‌ها", "vibe": "Melancholy" },
+        { "id": "b", "text": "بهار و شکوفه‌ها", "vibe": "Optimistic" },
+        { "id": "c", "text": "زمستون و برف", "vibe": "Isolation/Cozy" },
+        { "id": "d", "text": "تابستون و دریا", "vibe": "Freedom" }
+      ]
+    },
+    "q18": {
+      "id": 18,
+      "category": "The Soul",
+      "question": "بزرگترین ترست چیه؟",
+      "options": [
+        { "id": "a", "text": "فراموش شدن", "vibe": "Irrelevance" },
+        { "id": "b", "text": "شکست خوردن", "vibe": "Failure" },
+        { "id": "c", "text": "تنها موندن", "vibe": "Loneliness" },
+        { "id": "d", "text": "تکراری شدن زندگی", "vibe": "Boredom" }
+      ]
+    },
+    "q19": {
+      "id": 19,
+      "category": "The Soul",
+      "question": "توی یک جمع ناشناس، کجای اتاقی؟",
+      "options": [
+        { "id": "a", "text": "مرکز توجه و در حال حرف زدن", "vibe": "The Star" },
+        { "id": "b", "text": "چسبیده به دیوار و با گوشی", "vibe": "The Ghost" },
+        { "id": "c", "text": "نزدیک میز مزه‌ها", "vibe": "The Realistic" },
+        {
+          "id": "d",
+          "text": "در حال حرف زدن با یک نفر خاص",
+          "vibe": "The Deep One"
+        }
+      ]
+    },
+    "q20": {
+      "id": 20,
+      "category": "The Soul",
+      "question": "هدف نهاییت در زندگی چیه؟",
+      "options": [
+        { "id": "a", "text": "آرامش و خوشحالی", "vibe": "Peace" },
+        { "id": "b", "text": "پول و شهرت", "vibe": "Success" },
+        { "id": "c", "text": "تغییر دادن دنیا", "vibe": "Change" },
+        { "id": "d", "text": "کشف کردن ناشناخته‌ها", "vibe": "Discovery" }
+      ]
+    }
   }
 }
