@@ -1,5 +1,392 @@
 {
   "HomePage": {
     "title": "Welcome to VibeCheck!"
+  },
+  "Questions": {
+    "q1": {
+      "id": 1,
+      "category": "Daily Rituals",
+      "question": "How do you wake up on a Monday morning?",
+      "options": [
+        { "id": "a", "text": "With an alarm and stress", "vibe": "Hustler" },
+        {
+          "id": "b",
+          "text": "With sunlight and meditation",
+          "vibe": "Clean Girl/Boy"
+        },
+        {
+          "id": "c",
+          "text": "At 2 PM with phone notifications",
+          "vibe": "Night Owl"
+        },
+        {
+          "id": "d",
+          "text": "I don't; life is better in dreams",
+          "vibe": "Dreamer"
+        }
+      ]
+    },
+    "q2": {
+      "id": 2,
+      "category": "Daily Rituals",
+      "question": "What do you order at a cafe?",
+      "options": [
+        { "id": "a", "text": "Oat milk iced latte", "vibe": "Trendy" },
+        { "id": "b", "text": "Double espresso, black", "vibe": "Serious" },
+
+        {
+          "id": "c",
+          "text": "Hot chocolate with marshmallows",
+          "vibe": "Soft"
+        },
+        {
+          "id": "d",
+          "text": "Whatever looks best in photos",
+          "vibe": "Influencer"
+        }
+      ]
+    },
+    "q3": {
+      "id": 3,
+      "category": "Daily Rituals",
+      "question": "What’s your favorite playlist like?",
+      "options": [
+        { "id": "a", "text": "Rainy Lo-Fi beats", "vibe": "Introvert" },
+        { "id": "b", "text": "Fast, bass-boosted tracks", "vibe": "Extrovert" },
+        {
+          "id": "c",
+          "text": "Old songs nobody has heard of",
+          "vibe": "Indie/Old Soul"
+        },
+        { "id": "d", "text": "Trending TikTok songs", "vibe": "Mainstream" }
+      ]
+    },
+    "q4": {
+      "id": 4,
+      "category": "Daily Rituals",
+      "question": "What’s your ideal Friday night?",
+      "options": [
+        { "id": "a", "text": "Party and crowds", "vibe": "Social Butterfly" },
+        {
+          "id": "b",
+          "text": "Oversized hoodie, pizza, and Netflix",
+          "vibe": "Cozy"
+        },
+        { "id": "c", "text": "Walking in quiet streets", "vibe": "Thinker" },
+        {
+          "id": "d",
+          "text": "Finishing up overdue work",
+          "vibe": "Overachiever"
+        }
+      ]
+    },
+    "q5": {
+      "id": 5,
+      "category": "Daily Rituals",
+      "question": "What takes up most of your screen time?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pinterest and finding ideas",
+          "vibe": "Creative"
+        },
+        {
+          "id": "b",
+          "text": "Twitter and social/political debates",
+          "vibe": "Edgy"
+        },
+        {
+          "id": "c",
+          "text": "Instagram and checking on others",
+          "vibe": "Social"
+        },
+        {
+          "id": "d",
+          "text": "YouTube and documentaries/tutorials",
+          "vibe": "Nerd"
+        }
+      ]
+    },
+    "q6": {
+      "id": 6,
+      "category": "The Look",
+      "question": "What colors dominate your closet?",
+      "options": [
+        { "id": "a", "text": "Only black and grey", "vibe": "Minimal/Dark" },
+        { "id": "b", "text": "Pastels and bright colors", "vibe": "Soft/Cute" },
+        {
+          "id": "c",
+          "text": "Earthy and nude tones",
+          "vibe": "Earth Tone/Clean"
+        },
+        { "id": "d", "text": "Colorful and eccentric", "vibe": "Eclectic" }
+      ]
+    },
+    "q7": {
+      "id": 7,
+      "category": "The Look",
+      "question": "Which accessory do you never leave behind?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Large over-ear headphones",
+          "vibe": "Mysterious"
+        },
+        { "id": "b", "text": "Lots of silver rings", "vibe": "Vintage" },
+        { "id": "c", "text": "A smartwatch", "vibe": "Practical" },
+        {
+          "id": "d",
+          "text": "Sunglasses, even at night",
+          "vibe": "Main Character"
+        }
+      ]
+    },
+    "q8": {
+      "id": 8,
+      "category": "The Look",
+      "question": "What’s your favorite footwear for walking?",
+      "options": [
+        { "id": "a", "text": "Chunky sneakers", "vibe": "Chunky Sneakers" },
+        { "id": "b", "text": "Classic leather shoes", "vibe": "Old Money" },
+        {
+          "id": "c",
+          "text": "Comfortable flip-flops or sandals",
+          "vibe": "Carefree"
+        },
+        { "id": "d", "text": "Sharp and formal shoes", "vibe": "Sharp" }
+      ]
+    },
+    "q9": {
+      "id": 9,
+      "category": "The Look",
+      "question": "What’s your preferred hairstyle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Messy, 'just woke up' look",
+          "vibe": "Messy Look"
+        },
+        {
+          "id": "b",
+          "text": "Very neat and slicked back",
+          "vibe": "Slick Back"
+        },
+        { "id": "c", "text": "Colorful or unconventional", "vibe": "Rebel" },
+        { "id": "d", "text": "Always under a hat", "vibe": "Shy" }
+      ]
+    },
+    "q10": {
+      "id": 10,
+      "category": "The Look",
+      "question": "Where do you shop?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Thrift and vintage shops",
+          "vibe": "Sustainable"
+        },
+        { "id": "b", "text": "Famous mall brands", "vibe": "Luxury" },
+        { "id": "c", "text": "Online with discounts", "vibe": "Smart Buyer" },
+        {
+          "id": "d",
+          "text": "Custom-made from Pinterest ideas",
+          "vibe": "Aesthetic"
+        }
+      ]
+    },
+    "q11": {
+      "id": 11,
+      "category": "Relationships",
+      "question": "What are you looking for in a relationship?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Someone to share silence with",
+          "vibe": "Deep Connection"
+        },
+        {
+          "id": "b",
+          "text": "A partner in crime for adventures",
+          "vibe": "Partner in Crime"
+        },
+        { "id": "c", "text": "Someone who supports me", "vibe": "Safe Haven" },
+        {
+          "id": "d",
+          "text": "I prefer being single and free",
+          "vibe": "Independent"
+        }
+      ]
+    },
+    "q12": {
+      "id": 12,
+      "category": "Relationships",
+      "question": "Where should we go for a first date?",
+      "options": [
+        { "id": "a", "text": "A cozy, vintage cafe", "vibe": "Romantic" },
+        {
+          "id": "b",
+          "text": "An amusement park or gaming center",
+          "vibe": "Playful"
+        },
+        {
+          "id": "c",
+          "text": "An art gallery or cinema",
+          "vibe": "Intellectual"
+        },
+        {
+          "id": "d",
+          "text": "A concert or a crowded event",
+          "vibe": "High Energy"
+        }
+      ]
+    },
+    "q13": {
+      "id": 13,
+      "category": "Relationships",
+      "question": "What is your biggest Red Flag?",
+      "options": [
+        { "id": "a", "text": "Being rude to waitstaff", "vibe": "Kindness" },
+        { "id": "b", "text": "Hiding their phone from you", "vibe": "Trust" },
+        { "id": "c", "text": "Terrible taste in music", "vibe": "Vibe Match" },
+        {
+          "id": "d",
+          "text": "Talking too much without listening",
+          "vibe": "Communication"
+        }
+      ]
+    },
+    "q14": {
+      "id": 14,
+      "category": "Relationships",
+      "question": "How do you show affection to someone you love?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I make a playlist for them",
+          "vibe": "Words of Affirmation"
+        },
+        {
+          "id": "b",
+          "text": "I buy small, spontaneous gifts",
+          "vibe": "Giving"
+        },
+        {
+          "id": "c",
+          "text": "I just spend time with them",
+          "vibe": "Quality Time"
+        },
+        {
+          "id": "d",
+          "text": "I help them get things done",
+          "vibe": "Acts of Service"
+        }
+      ]
+    },
+    "q15": {
+      "id": 15,
+      "category": "Relationships",
+      "question": "What are you known for among your friends?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The one who always gives advice",
+          "vibe": "The Therapist"
+        },
+        {
+          "id": "b",
+          "text": "The one who always tells jokes",
+          "vibe": "The Clown"
+        },
+        {
+          "id": "c",
+          "text": "The one who is always late",
+          "vibe": "The Late One"
+        },
+        {
+          "id": "d",
+          "text": "The one who is always well-dressed",
+          "vibe": "The Icon"
+        }
+      ]
+    },
+    "q16": {
+      "id": 16,
+      "category": "The Soul",
+      "question": "If you were an animal, which one would you be?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A proud and independent cat",
+          "vibe": "Independent"
+        },
+        { "id": "b", "text": "A loyal and kind dog", "vibe": "Loyal" },
+        {
+          "id": "c",
+          "text": "A lonely and ambitious eagle",
+          "vibe": "Visionary"
+        },
+        { "id": "d", "text": "A wise and nocturnal owl", "vibe": "Wise" }
+      ]
+    },
+    "q17": {
+      "id": 17,
+      "category": "The Soul",
+      "question": "Which season do you love the most?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Autumn and rustling leaves",
+          "vibe": "Melancholy"
+        },
+        { "id": "b", "text": "Spring and blossoms", "vibe": "Optimistic" },
+        { "id": "c", "text": "Winter and snow", "vibe": "Isolation/Cozy" },
+        { "id": "d", "text": "Summer and the sea", "vibe": "Freedom" }
+      ]
+    },
+    "q18": {
+      "id": 18,
+      "category": "The Soul",
+      "question": "What is your biggest fear?",
+      "options": [
+        { "id": "a", "text": "Being forgotten", "vibe": "Irrelevance" },
+        { "id": "b", "text": "Failing", "vibe": "Failure" },
+        { "id": "c", "text": "Being alone", "vibe": "Loneliness" },
+        { "id": "d", "text": "A repetitive life", "vibe": "Boredom" }
+      ]
+    },
+    "q19": {
+      "id": 19,
+      "category": "The Soul",
+      "question": "In a room full of strangers, where are you?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Center of attention, talking",
+          "vibe": "The Star"
+        },
+        {
+          "id": "b",
+          "text": "Against the wall on my phone",
+          "vibe": "The Ghost"
+        },
+        { "id": "c", "text": "Near the snack table", "vibe": "The Realistic" },
+        {
+          "id": "d",
+          "text": "Talking to one specific person",
+          "vibe": "The Deep One"
+        }
+      ]
+    },
+    "q20": {
+      "id": 20,
+      "category": "The Soul",
+      "question": "What is your ultimate goal in life?",
+      "options": [
+        { "id": "a", "text": "Peace and happiness", "vibe": "Peace" },
+        { "id": "b", "text": "Money and fame", "vibe": "Success" },
+        { "id": "c", "text": "Changing the world", "vibe": "Change" },
+        { "id": "d", "text": "Discovering the unknown", "vibe": "Discovery" }
+      ]
+    }
   }
 }
