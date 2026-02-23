@@ -1,4 +1,9 @@
 {
+  "Common": {
+    "progress_label": "Your Journey",
+    "prev_btn": "Go Back",
+    "result_btn": "See Your Vibe"
+  },
   "HomePage": {
     "title": "Welcome to VibeCheck!"
   },
