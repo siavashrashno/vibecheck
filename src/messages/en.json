@@ -1,11 +1,26 @@
 {
+  "Intro": {
+    "title": "Your Vibe Isn’t Random.",
+    "description": "It lives in your habits, your style, your fears, and your dreams.\nTake the journey and uncover the energy you truly embody."
+  },
+
+  "NameStep": {
+    "title": "And what should we call you?",
+    "description": "Your name helps us personalize your vibe.",
+    "placeholder": "Type your name...",
+    "error_required": "Please enter your name",
+    "error_min": "Name must be at least 2 characters"
+  },
+
   "Common": {
+    "continue": "Continue",
     "progress_label": "Your Journey",
     "prev_btn": "Go Back",
-    "result_btn": "See Your Vibe"
+    "result_btn": "See Your Vibe",
+    "start_btn": "Discover My Vibe"
   },
   "HomePage": {
-    "title": "Welcome to VibeCheck!"
+    "title": "Let's Begin the Quiz"
   },
   "Questions": {
     "q1": {

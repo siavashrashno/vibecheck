@@ -24,7 +24,7 @@ export const LocaleSwitcher = () => {
   return (
     <Select defaultValue={locale} onValueChange={handleLocaleChange}>
       <SelectTrigger className="w-[120px] h-9 bg-transparent border-none hover:bg-accent transition-all">
-        <Languages className="w-4 h-4 mr-2 opacity-70" />
+        <Languages className="w-4 h-4  opacity-70" />
         <SelectValue placeholder="Language" />
       </SelectTrigger>
       <SelectContent>
