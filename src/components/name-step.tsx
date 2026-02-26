@@ -4,18 +4,23 @@ import { useForm } from "react-hook-form";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { useTranslations } from "next-intl";
+import { useContext } from "react";
+import { UserContext } from "@/context/user-context";
 
 interface NameStepProps {
-  onNext: (name: string) => void;
-  defaultValue: string;
-  onBack: () => void;
+  onNext: () => void;
+  // onBack: () => void;
 }
 
 type FormInputs = {
   firstName: string;
 };
 
-export const NameStep = ({ onNext, defaultValue, onBack }: NameStepProps) => {
+export const NameStep = ({ onNext }: NameStepProps) => {
+  const context = useContext(UserContext);
+  if (!context) return null;
+  const { userName, setUserName } = context;
+
   const t = useTranslations("NameStep");
   const common = useTranslations("Common");
   const {
@@ -24,12 +29,13 @@ export const NameStep = ({ onNext, defaultValue, onBack }: NameStepProps) => {
     formState: { errors },
   } = useForm<FormInputs>({
     defaultValues: {
-      firstName: defaultValue,
+      firstName: userName,
     },
   });
 
   const onSubmit = (data: FormInputs) => {
-    onNext(data.firstName);
+    setUserName(data.firstName);
+    onNext();
   };
 
   return (
@@ -68,14 +74,14 @@ export const NameStep = ({ onNext, defaultValue, onBack }: NameStepProps) => {
         </div>
 
         <div className="flex items-center gap-3 mt-8">
-          <Button
+          {/* <Button
             type="button"
             variant="ghost"
-            onClick={onBack}
+            // onClick={onBack}
             className="flex-1 rounded-full h-12  font-medium"
           >
             {common("prev_btn")}
-          </Button>
+          </Button> */}
           <Button
             type="submit"
             className="flex-1 rounded-full h-12 font-bold shadow-lg"

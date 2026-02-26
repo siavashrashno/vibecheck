@@ -5,6 +5,7 @@ import "./globals.css";
 
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { UserProvider } from "@/context/user-context";
 
 export default async function RootLayout({ children, params }: LayoutProps) {
   const { locale } = await params;
@@ -20,16 +21,18 @@ export default async function RootLayout({ children, params }: LayoutProps) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${vazir.variable} antialiased`}
       >
-        <NextIntlClientProvider messages={messages}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            {children}
-          </ThemeProvider>
-        </NextIntlClientProvider>
+        <UserProvider>
+          <NextIntlClientProvider messages={messages}>
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+            >
+              {children}
+            </ThemeProvider>
+          </NextIntlClientProvider>
+        </UserProvider>
       </body>
     </html>
   );

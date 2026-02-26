@@ -3,14 +3,16 @@
 import { useTranslations } from "next-intl";
 import { Header } from "@/components/shared/header";
 import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Intro } from "@/components/intro";
 import { NameStep } from "@/components/name-step";
+import { UserContext } from "@/context/user-context";
 
 export default function Home() {
   const [step, setStep] = useState(0);
+  const context = useContext(UserContext);
+  const username = context?.userName || "";
   const t = useTranslations("HomePage");
-  const [userName, setUserName] = useState("");
 
   const nextStep = () => setStep((prev) => prev + 1);
   const prevStep = () => setStep((prev) => prev - 1);
@@ -43,12 +45,8 @@ export default function Home() {
               className="space-y-6 text-center"
             >
               <NameStep
-                defaultValue={userName}
-                onNext={(name) => {
-                  setUserName(name);
-                  nextStep();
-                }}
-                onBack={prevStep}
+                onNext={nextStep}
+                // onBack={prevStep}
               />
             </motion.div>
           )}
@@ -61,7 +59,7 @@ export default function Home() {
               className="text-center"
             >
               <h1 className="text-4xl font-black tracking-tighter">
-                {userName}, let's find your vibe...
+                {username}, let's find your vibe...
               </h1>
               <p className="text-muted-foreground animate-pulse">
                 Loading your first question...
