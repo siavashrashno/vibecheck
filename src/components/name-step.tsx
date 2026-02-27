@@ -41,13 +41,15 @@ export const NameStep = ({ onNext, onBack }: NameStepProps) => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="w-full max-w-sm mx-auto space-y-8"
+      className="w-full max-w-xl mx-auto space-y-12"
     >
-      <div className="space-y-2 text-center">
-        <h2 className="text-2xl md:text-3xl font-light tracking-tighter">
+      <div className="space-y-6 text-center">
+        <h2 className="text-2xl md:text-3xl max-w-4xl font-light tracking-tighter">
           {t("title")}
         </h2>
-        <p className="text-sm text-muted-foreground">{t("description")}</p>
+        <p className="text-xs font-bold text-muted-foreground">
+          {t("description")}
+        </p>
       </div>
 
       <div className="space-y-4">
