@@ -9,14 +9,14 @@ import { UserContext } from "@/context/user-context";
 
 interface NameStepProps {
   onNext: () => void;
-  // onBack: () => void;
+  onBack: () => void;
 }
 
 type FormInputs = {
   firstName: string;
 };
 
-export const NameStep = ({ onNext }: NameStepProps) => {
+export const NameStep = ({ onNext, onBack }: NameStepProps) => {
   const context = useContext(UserContext);
   if (!context) return null;
   const { userName, setUserName } = context;
@@ -74,14 +74,14 @@ export const NameStep = ({ onNext }: NameStepProps) => {
         </div>
 
         <div className="flex items-center gap-3 mt-8">
-          {/* <Button
+          <Button
             type="button"
             variant="ghost"
-            // onClick={onBack}
+            onClick={onBack}
             className="flex-1 rounded-full h-12  font-medium"
           >
             {common("prev_btn")}
-          </Button> */}
+          </Button>
           <Button
             type="submit"
             className="flex-1 rounded-full h-12 font-bold shadow-lg"

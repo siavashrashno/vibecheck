@@ -1,6 +1,7 @@
 "use client";
 
-import { createContext, ReactNode, useState } from "react";
+import { useLocalStorage } from "@/hooks/useLocalStorage";
+import { createContext, ReactNode } from "react";
 
 interface UserContextType {
   userName: string;
@@ -12,7 +13,7 @@ export const UserContext = createContext<UserContextType | undefined>(
 );
 
 export function UserProvider({ children }: { children: ReactNode }) {
-  const [userName, setUserName] = useState("");
+  const [userName, setUserName] = useLocalStorage("currentUserName", "");
 
   return (
     <UserContext.Provider value={{ userName, setUserName }}>

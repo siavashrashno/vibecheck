@@ -3,13 +3,14 @@
 import { useTranslations } from "next-intl";
 import { Header } from "@/components/shared/header";
 import { AnimatePresence, motion } from "framer-motion";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { Intro } from "@/components/intro";
 import { NameStep } from "@/components/name-step";
 import { UserContext } from "@/context/user-context";
+import { useLocalStorage } from "@/hooks/useLocalStorage";
 
 export default function Home() {
-  const [step, setStep] = useState(0);
+  const [step, setStep, isMounted] = useLocalStorage("currentStep", 0);
   const context = useContext(UserContext);
   const username = context?.userName || "";
   const t = useTranslations("HomePage");
@@ -17,6 +18,7 @@ export default function Home() {
   const nextStep = () => setStep((prev) => prev + 1);
   const prevStep = () => setStep((prev) => prev - 1);
 
+  if (!isMounted) return null;
   return (
     <div className="relative min-h-screen flex flex-col overflow-hidden">
       <Header />
@@ -44,10 +46,7 @@ export default function Home() {
               transition={{ duration: 0.4 }}
               className="space-y-6 text-center"
             >
-              <NameStep
-                onNext={nextStep}
-                // onBack={prevStep}
-              />
+              <NameStep onNext={nextStep} onBack={prevStep} />
             </motion.div>
           )}
 
