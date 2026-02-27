@@ -58,12 +58,12 @@ export const NameStep = ({ onNext, onBack }: NameStepProps) => {
               minLength: { value: 2, message: t("error_min") },
             })}
             placeholder={t("placeholder")}
-            className={`text-center h-12  text-lg bg-transparent border-t-0 border-x-0 border-b-2 rounded-none focus-visible:ring-0 transition-all ${
+            className={`text-center h-12  text-sm bg-transparent border-t-0 border-x-0 border-b-2 rounded-none focus-visible:ring-0 transition-all ${
               errors.firstName
                 ? "border-red-500 focus-visible:border-red-500"
                 : "border-muted-foreground/30 focus-visible:border-primary"
             }`}
-            autoFocus
+            // autoFocus
           />
 
           {errors.firstName && (
@@ -75,17 +75,15 @@ export const NameStep = ({ onNext, onBack }: NameStepProps) => {
 
         <div className="flex items-center gap-3 mt-8">
           <Button
+            size="lg"
             type="button"
             variant="ghost"
             onClick={onBack}
-            className="flex-1 rounded-full h-12  font-medium"
+            className="flex-1 h-12 font-medium"
           >
             {common("prev_btn")}
           </Button>
-          <Button
-            type="submit"
-            className="flex-1 rounded-full h-12 font-bold shadow-lg"
-          >
+          <Button size="lg" type="submit" className="flex-1 h-12 font-medium">
             {common("continue")}
           </Button>
         </div>

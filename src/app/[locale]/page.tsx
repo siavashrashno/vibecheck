@@ -2,70 +2,59 @@
 
 import { useTranslations } from "next-intl";
 import { Header } from "@/components/shared/header";
-import { AnimatePresence, motion } from "framer-motion";
 import { useContext } from "react";
 import { Intro } from "@/components/intro";
 import { NameStep } from "@/components/name-step";
 import { UserContext } from "@/context/user-context";
-import { useLocalStorage } from "@/hooks/useLocalStorage";
 
 export default function Home() {
-  const [step, setStep, isMounted] = useLocalStorage("currentStep", 0);
   const context = useContext(UserContext);
-  const username = context?.userName || "";
+
+  if (!context) return null;
+
+  const { step, setStep, userName, isMounted } = context;
   const t = useTranslations("HomePage");
 
   const nextStep = () => setStep((prev) => prev + 1);
   const prevStep = () => setStep((prev) => prev - 1);
 
+  const handleStart = () => {
+    if (userName && userName.trim() !== "") {
+      setStep(2);
+    } else {
+      setStep(1);
+    }
+  };
+
   if (!isMounted) return null;
+
   return (
     <div className="relative min-h-screen flex flex-col overflow-hidden">
       <Header />
 
       <main className="flex-1 flex items-center justify-center p-6">
-        <AnimatePresence mode="wait">
-          {step === 0 && (
-            <motion.div
-              key="intro"
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.4 }}
-            >
-              <Intro onStart={nextStep} />
-            </motion.div>
-          )}
+        {step === 0 && (
+          <div className="animate-in fade-in slide-in-from-right-4 duration-500 ease-out">
+            <Intro onStart={handleStart} />
+          </div>
+        )}
 
-          {step === 1 && (
-            <motion.div
-              key="name-step"
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.4 }}
-              className="space-y-6 text-center"
-            >
-              <NameStep onNext={nextStep} onBack={prevStep} />
-            </motion.div>
-          )}
+        {step === 1 && (
+          <div className="animate-in fade-in slide-in-from-right-4 duration-500 ease-out space-y-6 text-center">
+            <NameStep onNext={nextStep} onBack={prevStep} />
+          </div>
+        )}
 
-          {step === 2 && (
-            <motion.div
-              key="quiz"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              className="text-center"
-            >
-              <h1 className="text-4xl font-black tracking-tighter">
-                {username}, let's find your vibe...
-              </h1>
-              <p className="text-muted-foreground animate-pulse">
-                Loading your first question...
-              </p>
-            </motion.div>
-          )}
-        </AnimatePresence>
+        {step === 2 && (
+          <div className="animate-in fade-in zoom-in-95 duration-500 ease-out text-center">
+            <h1 className="text-4xl font-black tracking-tighter">
+              {userName}, let's find your vibe...
+            </h1>
+            <p className="text-muted-foreground animate-pulse mt-4">
+              Loading your first question...
+            </p>
+          </div>
+        )}
       </main>
     </div>
   );
